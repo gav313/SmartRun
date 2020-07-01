@@ -9,6 +9,9 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    &:hover {
+        filter: brightness(0.9);
+    }
     &:active {
         outline: none;
     }
@@ -22,5 +25,10 @@
         height: 55px;
         font-size: 16px;
         width: 100%;
+    }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
     }
 }

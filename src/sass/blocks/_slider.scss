@@ -1,25 +1,54 @@
 .slider {
+    button {
+        padding: 0;
+        width: 30;
+        height: 50px;
+        outline: none;
+    }
+    .container {
+        position: relative;
+    }
     padding: 81px 0;
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         width: 30px;
         height: 50px;
         border: none;
+        left: 0;
         background-color: #fff;
         top: 50%;
-        transform: translateX(-50%);
+        transform: translateY(-50%);
+        z-index: 5;
     }
-    .slick-next {
-        right: 0px;
+    .next {
+        right: 0;
+        left: auto;
     }
     &__inner {
         position: relative;
         margin: 0 auto;
         width: 100%;
+        .tns-item {
+            vertical-align: middle !important;
+        }
         img {
             display: block;
-            width: 80%;
             margin: 0 auto;
         }
+    }
+    .tns-nav {
+        visibility: hidden;
+        .tns-nav-active {
+            background-color: $main-color;
+        }
+        button {
+            margin: 5px;
+            width: 15px;
+            height: 15px;
+            background-color: #d0d0d0;
+            border: none;
+            border-radius: 100%;
+        }
+        
     }
 }
