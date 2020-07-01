@@ -153,6 +153,22 @@
                 margin-right: 0px;
             }
         }
+    }
+    .footer__infoblock {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .feed-form_mt25 {
+        width: 100%;
+    }
+    .modal {
+        width: 80%;
+        padding: 20px;
+        &__close {
+            position: absolute;
+            top: -50px;
+            right: 0px;
+        }
     }    
 }
 
